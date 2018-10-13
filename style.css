@@ -1,0 +1,74 @@
+body{
+    width: 100%;
+    height: 100%;
+}
+.container{
+    text-align: center;
+    margin-top: 120px;
+    margin-bottom:120px;
+}
+#titone{
+    font-family: "eurostile",sans-serif;
+    font-size: 40px;   
+}
+#tittwo{
+    font-family: "eurostile",sans-serif;
+    font-size: 40px; 
+    margin-bottom: 30px;
+}
+#titthree{
+    text-align: center;
+}
+#titfour{
+    margin-top: 7px;
+}
+#subone{
+    margin-top: 1px;
+    opacity: 0.85;
+    font-size: 18px;
+    margin-bottom: 190px;
+}
+#subtwo{
+    opacity: 0.85;
+    text-align: center;
+}
+#subthree{
+    text-align: center;
+}
+#subfour{
+    margin-top:3px;
+}
+
+.center{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 150px;
+}
+.tile{
+    margin-left: 40%;
+    margin-right: 40%;
+    margin-top: 200px;
+}
+.image{
+    width: 60px;
+    height: 40px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0%;
+    margin-bottom: 0%;
+}
+.navbar {
+    position: fixed;
+    width: 100%; 
+}
+#contact{
+    font-size: 15px;
+}
+#tagsosmed{
+    margin-bottom: 60px;
+}
+.sosmed{
+    font-size: 25px;
+    margin-top: 55px;
+}
