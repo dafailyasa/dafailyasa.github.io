@@ -9,12 +9,12 @@ body{
 }
 #titone{
     font-family: "eurostile",sans-serif;
-    font-size: 40px;   
+    font-size: 22px;   
 }
 #tittwo{
     font-family: "eurostile",sans-serif;
-    font-size: 40px; 
-    margin-bottom: 30px;
+    font-size:22px; 
+    margin-bottom: 45px;
 }
 #titthree{
     text-align: center;
@@ -25,12 +25,13 @@ body{
 #subone{
     margin-top: 1px;
     opacity: 0.85;
-    font-size: 18px;
+    font-size: 16px;
     margin-bottom: 190px;
 }
 #subtwo{
     opacity: 0.85;
     text-align: center;
+    font-size: 16px;
 }
 #subthree{
     text-align: center;
@@ -58,10 +59,7 @@ body{
     margin-top: 0%;
     margin-bottom: 0%;
 }
-.navbar {
-    position: fixed;
-    width: 100%; 
-}
+
 #contact{
     font-size: 15px;
 }
@@ -71,4 +69,28 @@ body{
 .sosmed{
     font-size: 25px;
     margin-top: 55px;
+}
+
+/* DESKTOP VERSION */
+@media (min-width:992px){
+    #titone{
+        font-family: "eurostile",sans-serif;
+        font-size: 40px;   
+    }
+    #subone{
+        margin-top: 1px;
+        opacity: 0.85;
+        font-size: 18px;
+        margin-bottom: 190px;
+    }
+    #tittwo{
+        font-family: "eurostile",sans-serif;
+        font-size: 40px; 
+        margin-bottom: 30px;
+    }
+    #subtwo{
+        opacity: 0.85;
+        text-align: center;
+        font-size: 20px;
+    }
 }
