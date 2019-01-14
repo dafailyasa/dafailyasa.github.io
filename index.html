@@ -5,16 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Dafa Ilyasa</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.1/css/bulma.min.css">
-    <link rel="stylesheet" href="https://i.icomoon.io/public/temp/10f83d2f5e/UntitledProject/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="style.css">
     <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    
   </head>
   <body>
       <!-- Navbar -->
-    <nav class="navbar" role="navigation" aria-label="main navigation">
+    <nav class="navbar is-fixed-top" role="navigation" aria-label="main navigation">
     <div class="navbar-brand">
-        <a class="navbar-item" href="https://bulma.io">
-        <img src="https://bulma.io/images/bulma-logo.png" alt="Bulma: a modern CSS framework based on Flexbox" width="112" height="28">
+        <a class="navbar-item" href="#dafa">
+        <h2 class="nav-name"> <b> Dafa ilyasa </b> </h2>
         </a>
         <span class="navbar-burger burger" data-target="navMenu">
                 <span></span>
@@ -34,7 +36,7 @@
     </div>
     </nav>
     <!--Intro-->
-    <section class="hero">
+    <section class="hero"  id="dafa">
       <div class="hero-body">
         <div class="container">
           <h1 class="title" id="titone">
@@ -43,8 +45,15 @@
           <h2 class="subtitle" id="subone">
             i design code beutifully simple things, and i love what i do.
           </h2>
+          <div class="card-content is-flex is-horizontal-center">
+            <a href="https://www.facebook.com/dafailyasaa"><img src="image/facebook.png" alt="my facebook"> </a>
+            <a href="https://www.instagram.com/dafa_ilyasa/"> <img src="image/instagram.png" alt="my instagram"> </a>
+            <a href="https://github.com/dafailyasa"> <img src="image/github.png" alt="my github"> </a>
+            <a href="https://plus.google.com/113464584804343357754"> <img src="image/google-plus.png" alt="my google+"> </a>
+          </div>
         </div>
           <img src="image/mypicture.jpg" alt="my image profile" width="280" height="20" class="center">
+          
         </div>
     </section>
     <!--the content-->
@@ -93,26 +102,36 @@
     <section class="hero is-light"id="contact">
         <div class="hero-foot">
           <div class="container">
-            <h1 class="title"id="tagsosmed">
-                Contact Us :
+            <h1 class="title">
+              Let’s create something you will love.
                 
-            </h1>
-            <h6 class="subtitle is-6">+62 85881736675 <br> <br>
-              dafailyasa25@gmail.com
-            </h6>
-            <div class="wrapper">
-              <ul class="sosmed">
-                <li>
-                    <a href="https://www.facebook.com/dafailyasaa" class="icon-facebook"></a>
-                    <a href="https://www.instagram.com/dafa_ilyasa/" class="icon-instagram"></a>
-                    <a href="https://twitter.com/dafa_ilyasa" class="icon-twitter"></a>
-                    <a href="https://github.com/dafailyasa" class="icon-github"></a>
-                </li>
-              </ul>
+            </h1> <br><br><br>
 
-            </div>
+            <form action="mailto:dafailyasa25@gmail.com" method="post" enctype="text/plain">
+              <div class="field">
+                <label class="label">Name</label>
+                <div class="control">
+                  <input class="input" type="text" name="name" placeholder="Your Name">
+                </div>
+              </div>
+              
+              <div class="field">
+                <label class="label">Email</label>
+                <div class="control">
+                  <input class="input" type="text" name="mail" placeholder="Your Email"> <br>
+                </div>
+              </div>
+              <div class="field">
+                <label class="label">Message</label>
+                <div class="control">
+                  <input class="input" type="text" name="comment" placeholder="Your Message">
+                  <br> <br>
+                  <input class="button is-link" type="submit" value="Send">
+                </div>
+              </div>
+              
+            </form>
         </div>    
-        <footer>&copy; 2018 <strong>Dafa Ilyasa.</strong> All rights reserved. </footer>
       </section>
 
   </body>
@@ -128,4 +147,30 @@
   });
 })();
   </script>
+  <script>
+    $(document).ready(function(){
+      // Add smooth scrolling to all links
+      $("a").on('click', function(event) {
+    
+        // Make sure this.hash has a value before overriding default behavior
+        if (this.hash !== "") {
+          // Prevent default anchor click behavior
+          event.preventDefault();
+    
+          // Store hash
+          var hash = this.hash;
+    
+          // Using jQuery's animate() method to add smooth page scroll
+          // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+          $('html, body').animate({
+            scrollTop: $(hash).offset().top
+          }, 800, function(){
+       
+            // Add hash (#) to URL when done scrolling (default click behavior)
+            window.location.hash = hash;
+          });
+        } // End if
+      });
+    });
+    </script>
 </html>
